@@ -11,9 +11,8 @@ public class SMSJob implements Job {
 	private static final Logger log = LoggerFactory.getLogger(SMSJob.class);
 	@Override
 	public void execute(JobExecutionContext arg0) throws JobExecutionException {
-		log.info("+++++++++++++++++++++++++++someProp ++++++++++++++ ");
-//		System.out
-//				.println("+++++++++++++++++++++++++++someProp ++++++++++++++ ");
+		log.debug("--check MobileValidation--");
+		
 	}
 
 }
