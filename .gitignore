@@ -1,1 +1,15 @@
 /target/classes
+/target/
+
+.settings/org.eclipse.wst.validation.prefs
+.classpath
+.project
+.project
+.project
+.settings/org.eclipse.wst.common.component
+.settings/org.eclipse.m2e.core.prefs
+.settings/org.eclipse.jdt.core.prefs
+.settings/org.eclipse.wst.common.project.facet.core.xml
+.settings/org.eclipse.core.resources.prefs
+.settings/org.eclipse.wst.common.component
+.settings/org.eclipse.wst.common.project.facet.core.xml
