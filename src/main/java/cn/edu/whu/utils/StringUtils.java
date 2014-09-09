@@ -45,4 +45,53 @@ public class StringUtils {
 		return resultString;
 	}
 
+	public static boolean isBlank(String s) {
+		return (s == null || s.trim().length() == 0);
+	}
+
+	/**
+	 * returns true if String[] s is empty, or if any entries are blank.
+	 */
+	public static boolean isBlank(String[] s) {
+		if (s == null || s.length == 0)
+			return true;
+
+		for (String value : s) {
+			if (isBlank(value))
+				return true;
+		}
+
+		return false;
+	}
+
+	/**
+	 * returns true if String[] s is empty, or if ALL entries are blank.
+	 */
+	public static boolean isBlankAll(String[] s) {
+		if (s == null || s.length == 0)
+			return true;
+
+		for (String element : s) {
+			if (!isBlank(element))
+				return false;
+		}
+		return true;
+	}
+
+	/**
+	 * returns true if String s is all numeric.
+	 */
+	public static boolean isValidExtension(String s) {
+		if (isBlank(s))
+			return true;
+
+		char[] chars = s.toLowerCase().toCharArray();
+
+		for (char c : chars) {
+			if (!(Character.isDigit(c) || c == '#' || c == '*' || c == 'p'))
+				return false;
+		}
+
+		return true;
+	}
 }

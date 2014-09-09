@@ -5,7 +5,7 @@
 	<artifactId>schoolFellow</artifactId>
 	<packaging>war</packaging>
 	<version>1.0-SNAPSHOT</version>
-	<name>AdvertisementMap Maven Webapp</name>
+	<name>schoolFellow Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 
 
@@ -17,7 +17,7 @@
 		<jackson.version>1.9.10</jackson.version>
 		<slf4j.api.version>1.7.5</slf4j.api.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<finalName>AdvertisementMap</finalName>
+		<finalName>schoolFellow</finalName>
 
 	</properties>
 
@@ -191,7 +191,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>AdvertisementMap</finalName>
+		<finalName>schoolFellow</finalName>
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>

@@ -1,7 +1,6 @@
 package com.flyingbiz.user.entity;
 
 public enum SecurityType {
-
 	SECRET("秘密"), CONFIDENTIAL("机密"), TOPSECRET("绝密");
 
 	private String securityType;
