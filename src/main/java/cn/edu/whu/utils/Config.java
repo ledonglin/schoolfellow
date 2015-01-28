@@ -17,11 +17,10 @@ import cn.edu.whu.model.SMSValidatePair;
 public class Config {
 	private static final Logger logger = LoggerFactory.getLogger(Config.class);
 
-	private final Properties properties;
+	private static final Properties properties= new Properties();
 
 	@ConstructorProperties("file")
 	private Config(String file) throws FileNotFoundException, IOException {
-		properties = new Properties();
 		properties.load(getClass().getClassLoader().getResourceAsStream(file));
 	}
 
@@ -37,15 +36,15 @@ public class Config {
 		return null;
 	}
 
-	public  String get(String key) {
+	public static String get(String key) {
 		return (String) properties.get(key);
 	}
 
-	public int getInt(String key) {
+	public static int getInt(String key) {
 		return Integer.parseInt(get(key));
 	}
 
-	public boolean getBoolean(String key) {
+	public static boolean getBoolean(String key) {
 		Date date = new Date();
 		date.toString();
 		return Boolean.parseBoolean(get(key));

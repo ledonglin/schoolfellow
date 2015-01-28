@@ -7,7 +7,6 @@
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener
 		</listener-class>
-		<!-- <listener-class>cn.edingwa.baselib.BaseGlobalObjectsController</listener-class> -->
 	</listener>
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
